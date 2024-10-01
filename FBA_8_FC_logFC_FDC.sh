@@ -19,7 +19,9 @@ do
     echo "Computing log(FC) for participant ${i}..."
     mrcalc ./${i}/FC_directory/FC.mif -log ./${i}/FC_directory/log_FC.mif -force
 
-
+    mkdir ./${i}/FDC_directory
+    cp ./${i}/FC_directory_FINAL/index.mif ./${i}/FDC_directory
+    cp ./${i}/FC_directory_FINAL/directions.mif ./${i}/FDC_directory 
 
     # Step 3: Compute FDC (combined measure of fiber density and fiber cross section)
     echo "Computing FDC"
