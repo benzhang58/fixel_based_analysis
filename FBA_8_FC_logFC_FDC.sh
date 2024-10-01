@@ -19,6 +19,13 @@ do
     echo "Computing log(FC) for participant ${i}..."
     mrcalc ./${i}/FC_directory/FC.mif -log ./${i}/FC_directory/log_FC.mif -force
 
+
+
+    # Step 3: Compute FDC (combined measure of fiber density and fiber cross section)
+    echo "Computing FDC"
+    mrcalc ./${i}/DTIPrep/fixel_masked_FINAL/fd_masked.mif ./${i}/FC_directory_FINAL/FC.mif -mult ./${i}/FC_directory_FINAL/FDC.mif
+   
+
    
 
     echo "Finished processing participant ${i}."
