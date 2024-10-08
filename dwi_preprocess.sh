@@ -29,6 +29,6 @@ do
 
  echo "${i} Bias field correction"
 
-  	dwibiascorrect ant ./${i}/DTIPrep/dwi_denoised_degibbs_preproc.mif ./${i}/DTIPrep/dwi_denoised_degibbs_preproc_unbiased.mif
+  	dwibiascorrect ants ./${i}/DTIPrep/dwi_denoised_degibbs_preproc.mif ./${i}/DTIPrep/dwi_denoised_degibbs_preproc_unbiased.mif
  
  done
