@@ -6,9 +6,9 @@ do
 
 echo ${i}
 
-dwi2response dhollander ./${i}/DTIPrep/DWI_QCed.nii.gz ./${i}/DTIPrep/wm_response.txt ./${i}/DTIPrep/gm_response.txt ./${i}/DTIPrep/csf_response.txt -fslgrad ./${i}/DTIPrep/DWI_QCed.bvec ./${i}/DTIPrep/DWI_QCed.bval -force
+dwi2response dhollander ./${i}/DTIPrep/dwi_denoised_degibbs_preproc_unbiased.mif ./${i}/DTIPrep/wm_response.txt ./${i}/DTIPrep/gm_response.txt ./${i}/DTIPrep/csf_response.txt 
 
-	wm_response_files="${wm_response_files} ./${i}/DTIPrep/wm_response.txt"
+    wm_response_files="${wm_response_files} ./${i}/DTIPrep/wm_response.txt"
     gm_response_files="${gm_response_files} ./${i}/DTIPrep/gm_response.txt"
     csf_response_files="${csf_response_files} ./${i}/DTIPrep/csf_response.txt"
 
