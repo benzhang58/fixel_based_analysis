@@ -39,7 +39,7 @@ dwifslpreproc ./${i}/dwi_denoised_degibbs.mif ./${i}/Fixel_Analysis/dwi_denoise_
 # Bias field correction to improve brain mask estimation at later step 
 echo "${i} Bias Correcting"
 
-dwibiascorrect ants ./${i}/DTIPrep/dwi_denoised_degibbs_preproc.mif ./${i}/DTIPrep/dwi_denoised_degibbs_preproc_unbiased.
+dwibiascorrect ants ./${i}/DTIPrep/dwi_denoised_degibbs_preproc.mif ./${i}/DTIPrep/dwi_denoised_degibbs_preproc_unbiased
 
         
 		
